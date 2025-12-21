@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction(){
+            document.getElementById('demo3').innerHTML="Paragraph Changed";
+        }
+    </script>
+</head>
+<body>
+    <h1>Script in head</h1>
+    <p id="demo3">Current paragraph</p>
+    <button onclick="myFunction()">Head</button>
+
+    <h1>Script in body</h1>
+    <p id="demo4">Current paragraph</p>
+    <button onclick="newFunction()">Body</button>
+
+    <script>
+        function newFunction(){
+            document.getElementById('demo4').innerHTML="New Paragraph";
+        }
+    </script>
+
+</body>
+</html>
