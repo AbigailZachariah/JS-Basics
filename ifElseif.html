@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>if else if else</h2>
+    <P>Using if-if elsif-else to get greeting according to the time</P>
+    <button type="button" onclick="greeting()">Click</button>
+    <p id="block"></p>
+
+    <script>
+        function greeting(){
+            const time=new Date().getHours();
+            let Greeting;
+            if(time<12){
+                Greeting="Good Morning!";
+            }
+            else if(time<18){
+                Greeting="Good Afternoon!";
+            }
+            else{
+                Greeting="Good Evening!";
+            }
+            document.getElementById("block").innerHTML=Greeting;
+        }
+    </script>
+</body>
+</html>
