@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread operator</h1>
+    <p id="demo8"></p>
+    <script>
+        let text='12345';
+        let min=Math.min(...text);
+        let max=Math.max(...text);
+
+        document.getElementById('demo8').innerHTML="Minimum is: "+min+"<br>Maximum is: "+max;
+    </script>
+</body>
+</html>
