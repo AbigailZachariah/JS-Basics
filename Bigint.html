@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BigInt Operations</h1>
+    <h2>Calculating the sum</h2>
+    <p>We cannot perform direct addition.One has to be converted.</p>
+
+    <p id="bigInt"></p>
+
+    <script>
+        let x=10n;
+        let y=15;
+
+        let z=Number(x)+y;
+        document.getElementById('bigInt').innerHTML=z;
+    </script>
+</body>
+</html>
