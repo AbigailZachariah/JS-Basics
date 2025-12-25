@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <h2>Functions with parameters</h2>
+    <p id="Greet"></p>
+    <button onclick="greet('Abigail')">Template String</button>
+
+    <p id="NoArrow"></p>
+    <button onclick="newFunction(3,5)">Without Arrow</button>
+
+    <p id="WithArrow"></p>
+    <button onclick="Arrow(2,3)">Arrow Function</button>
+
+    <script>
+        function greet(name){
+            document.getElementById('Greet').innerHTML= `Hello ${name}!`;
+        }
+
+        let newFunction=function(a,b)
+        {document.getElementById('NoArrow').innerHTML=a+b;}
+
+        let Arrow=(a,b)=>document.getElementById('WithArrow').innerHTML=a*b;
+
+    </script>
+</body>
+</html>
